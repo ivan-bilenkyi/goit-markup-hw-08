@@ -1,22 +1,22 @@
-@import url('./global.css');
-@import url('./header.css');
-@import url('./hero.css');
-@import url('./features.css');
-@import url('./our-works.css');
-@import url('./team.css');
-@import url('./customers.css');
-@import url('./footer.css');
-@import url('./mobile-menu.css');
-@import url('./backdrop.css');
-@import url('./header-media.css');
-@import url('./hero-media.css');
-@import url('./features-media.css');
-@import url('./our-works-media.css');
-@import url('./team-media.css');
-@import url('./customers-media.css');
-@import url('./footer-media.css');
-@import url('./mobile-menu-media.css');
-@import url('./backdrop-media.css');
+@import url('./css/global.css');
+@import url('./css/header.css');
+@import url('./css/hero.css');
+@import url('./css/features.css');
+@import url('./css/our-works.css');
+@import url('./css/team.css');
+@import url('./css/customers.css');
+@import url('./css/footer.css');
+@import url('./css/mobile-menu.css');
+@import url('./css/backdrop.css');
+@import url('./css/header-media.css');
+@import url('./css/hero-media.css');
+@import url('./css/features-media.css');
+@import url('./css/our-works-media.css');
+@import url('./css/team-media.css');
+@import url('./css/customers-media.css');
+@import url('./css/footer-media.css');
+@import url('./css/mobile-menu-media.css');
+@import url('./css/backdrop-media.css');
 
 /* =================== Header =================== */
 
