@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/ivan-bilenkyi.github.io/",
+    "build": "vite build --base=/goit-markup-hw-08/",
     "preview": "vite preview"
   },
   "devDependencies": {
