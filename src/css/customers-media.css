@@ -1,0 +1,22 @@
+@media screen and (min-width: 768px) {
+  .customers .container {
+    width: 582px;
+  }
+  .customer-item {
+    max-width: 190px;
+    flex-basis: calc((100% - 48px) / 3);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .customers .container {
+    width: 1158px;
+  }
+  .customer-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .customer-item {
+    max-width: 190px;
+    flex-basis: calc((100% - 120px) / 6);
+  }
+}

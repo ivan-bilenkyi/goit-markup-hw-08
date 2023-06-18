@@ -1,0 +1,36 @@
+.customers {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.customer-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px 16px;
+}
+.customer-item {
+  max-width: 190px;
+  flex-basis: calc((100% - 16px) / 2);
+}
+.customer-link {
+  color: var(--customer-svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88px;
+  border: 1px solid var(--customer-svg);
+  border-radius: 4px;
+
+  transition: color var(--cubic), border-color var(--cubic);
+}
+
+.customer-icon {
+  fill: currentColor;
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  color: var(--active-color);
+  border-color: var(--active-color);
+}

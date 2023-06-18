@@ -1,0 +1,221 @@
+.backdrop {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity var(--cubic), visibility var(--cubic);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  background-color: #fcfcfc;
+  background-repeat: repeat-y;
+  background-size: contain;
+  border-radius: 4px;
+  margin: auto;
+  max-width: 392px;
+  min-height: 584px;
+  padding: 72px 16px 24px 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--cubic);
+  width: 100%;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleY(0);
+}
+
+.modal-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: background-color var(--cubic), border var(--cubic);
+}
+.close-btn-icon {
+  fill: var(--primary-color);
+  transition: fill var(--cubic);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--active-color);
+  border: none;
+}
+
+.modal-btn:focus .close-btn-icon,
+.modal-btn:hover .close-btn-icon {
+  fill: #fff;
+}
+
+.modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.form-field {
+  margin-bottom: 8px;
+}
+
+.form-label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+}
+
+.form-input-wrap {
+  display: block;
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  outline: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  transition: border-color var(--cubic);
+  padding-left: 38px;
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  fill: var(--primary-color);
+  transition: fill var(--cubic);
+}
+
+.form-input:focus {
+  border-color: #4d5ae5;
+}
+
+.form-input:focus + .form-icon {
+  fill: #4d5ae5;
+}
+
+.form-textarea {
+  margin-bottom: 16px;
+}
+
+.form-comment {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
+
+  transition: border-color var(--cubic);
+}
+
+.form-comment::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.form-comment:focus {
+  outline: none;
+  border: 1px solid #4d5ae5;
+}
+
+.form-check-desc {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.form-check-desc a {
+  color: #4d5ae5;
+}
+
+.check-wrap {
+  margin-bottom: 24px;
+}
+
+.check-icon-wrap {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 8px;
+  fill: transparent;
+  transition: background-color var(--cubic), border var(--cubic),
+    fill var(--cubic);
+  cursor: pointer;
+}
+
+.form-check:checked + .form-check-desc .check-icon-wrap {
+  background-color: var(--active-color);
+  border: none;
+  fill: #f4f4fd;
+}
+
+.form-check:focus + .form-check-desc .check-icon-wrap {
+  border-color: #4d5ae5;
+}
+
+.submit-btn {
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: var(--bg-btn-color);
+  border-radius: 4px;
+  padding: 16px 32px;
+
+  transition: background-color var(--cubic);
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: var(--active-color);
+}

@@ -1,0 +1,13 @@
+.features {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.icon-svg {
+  display: none;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mobile-gap);
+}

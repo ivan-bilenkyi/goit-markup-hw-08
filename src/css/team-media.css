@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px) {
+  .team .container {
+    width: 294px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team .container {
+    width: 582px;
+  }
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+  .team-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .team .container {
+    width: 1158px;
+  }
+  .team-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .team-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+}

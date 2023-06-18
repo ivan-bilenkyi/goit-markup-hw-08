@@ -1,0 +1,13 @@
+@media screen and (min-width: 1158px) {
+  .our-works {
+    display: block;
+    padding-bottom: 120px;
+  }
+  .work-list {
+    display: flex;
+    gap: var(--margin-gap);
+  }
+  .work-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+}
